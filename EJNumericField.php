@@ -16,7 +16,7 @@ class EJNumericField extends CInputWidget
      * @var string
      * @since 0.1
      */
-    public $seperator =  ".";
+    public $separator =  ".";
     /** Jquery selector.
      *  This string if set will be used as 1st param to 
      * the jquery <code>live()</code>.
@@ -113,7 +113,7 @@ class EJNumericField extends CInputWidget
     public function run()
     {
         if(isset($this->model) && isset($this->attribute)) {
-            echo CHtml::actvieTextField($this->model, $this->attribute, $this->htmlOptions );
+            echo CHtml::activeTextField($this->model, $this->attribute, $this->htmlOptions );
         } else {
             echo CHtml::textField($this->name, $this->value, $this->htmlOptions);
         }
